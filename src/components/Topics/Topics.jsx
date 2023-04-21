@@ -6,16 +6,18 @@ import Row from 'react-bootstrap/Row';
 
 const Topics = () => {
     const topics = useLoaderData().data;
-    console.log(topics.length);
     return (
 
-        <Row xs={1} md={2} lg={4} className="mt-5 justify-content-center">
+        <div>
+            <h2 className='ms-5 mt-5 mx-auto'>Programming Topics</h2>
+            <Row xs={1} md={2} lg={4} className="mt-5 justify-content-center">
            
-                {
-                    topics.map(topic=> <TopicCard key={topic.id} topic={topic}></TopicCard> )
-                }
-               
-        </Row>
+                    {
+                        topics.map(topic=> <TopicCard key={topic.id} topic={topic}></TopicCard> )
+                    }
+                    
+            </Row>
+        </div>
         
     );
 };
