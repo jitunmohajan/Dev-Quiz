@@ -1,12 +1,23 @@
 import React from 'react';
 import './TopBanner.css';
-// import Image from 'react-bootstrap/Image';
+import Carousel from 'react-bootstrap/Carousel';
 const TopBanner = () => {
     return (
-        <div className='top-banner'>
-            <img src="/bg-1.jpg" alt=""></img>
-            {/* <Image src="/test.jpg" rounded /> */}
-        </div>
+
+        <Carousel>
+            <Carousel.Item>
+                <img
+                className="d-block w-100"
+                src="/bg-1.jpg"
+                alt="First slide"
+                />
+                <Carousel.Caption>
+                <h3 className='tex-white bg-primary'>Dev-Quiz is an interactive learning platform</h3>
+                
+                </Carousel.Caption>
+            </Carousel.Item>
+        
+        </Carousel>
     );
 };
 

@@ -6,7 +6,7 @@ const Blog = () => {
     return (
         <div className='container mt-5'>
             
-            <h1 className='text-center mb-5 '> <span className='orange'>Question</span> <span className='blue'>&</span> <span className='orange'>Answer</span></h1>
+            <h1 className='text-center mb-5 '> <span className='orange'>Question</span> <span className='text-primary'>&</span> <span className='orange'>Answer</span></h1>
             <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>What is the purpose of react router?</Accordion.Header>

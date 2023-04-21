@@ -8,7 +8,7 @@ const TopicCard = ({topic}) => {
     console.log(topic);
     return (
     
-        <Card className='me-2 p-3 mb-5' style={{ width: '18rem' }}>
+        <Card className='shadow-lg me-3 p-3 mb-5' style={{ width: '18rem' }}>
             <Card.Img className='background-color' variant="top" src={logo} />
             <Card.Body>
             <Card.Title>{name}</Card.Title>
