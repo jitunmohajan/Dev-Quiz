@@ -1,18 +1,27 @@
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './App.css';
-import Button from 'react-bootstrap/Button';
+import Main from './layouts/Main';
+import Home from './components/Home/Home';
+
 function App() {
   
-  
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Main></Main>,
+      children: [
+        {
+          path: '/',
+          element: <Home></Home>
+        }
+      ]
+    }
+  ]);
   return (
     <div className="App">
-     <Button variant="outline-primary">Primary</Button>{''}
-      <Button variant="outline-secondary">Secondary</Button>{' '}
-      <Button variant="outline-success">Success</Button>{' '}
-      <Button variant="outline-warning">Warning</Button>{' '}
-      <Button variant="outline-danger">Danger</Button>{' '}
-      <Button variant="outline-info">Info</Button>{' '}
-      <Button variant="outline-light">Light</Button>{' '}
-      <Button variant="outline-dark">Dark</Button>
+      
+      <RouterProvider router={router}></RouterProvider>
+    
     </div>
   )
 }
