@@ -1,0 +1,11 @@
+.nav-design{
+    text-decoration: none;
+    font-weight: 700;
+}
+.nav-design:hover{
+    background-color: aliceblue;
+    color: orange;
+}
+.active{
+    color:orange;
+}
